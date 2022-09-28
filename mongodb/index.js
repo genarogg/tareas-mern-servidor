@@ -1,1 +1,1 @@
-db.createUser({user: "genarogg", pwd: "123", roles: ["readWrite", "dbAdminn"]})
+db.createUser({user: "genarogg", pwd: "l0RKSRN2WVjxG7Gx", roles: ["readWrite", "dbAdminn"]})

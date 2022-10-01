@@ -34,7 +34,6 @@ exports.autenticarUsuario = async (req, res) => {
     const payload = {
       usuario: {
         id: usuario.id,
-        
       },
     };
 
@@ -53,5 +52,16 @@ exports.autenticarUsuario = async (req, res) => {
     );
   } catch (error) {
     console.log(error);
+  }
+};
+
+/* obtiene el usuario autenticado */
+exports.uusuarioAutenticado = async (req, res) => {
+  try {
+    const usuario = await Usuario.findById(req.usuario.id);
+    res.json({ usuario });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ msg: "Hubo un error" });
   }
 };

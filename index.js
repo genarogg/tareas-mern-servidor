@@ -4,6 +4,8 @@ const cors = require("cors")
 /* crear servidor */
 const app = express();
 
+console.log('hola')
+
 /* Conectar a la base de datos */
 conectarDB();
 
@@ -22,5 +24,5 @@ app.use("/api/proyectos", require("./routes/proyectos"));
 app.use("/api/tareas", require("./routes/tareas"));
 /* arrancar el app */
 app.listen(port,'0.0.0.0', () => {
-  console.log(`El servidor esta funcionando en el port ${PORT}`);
+  console.log(`El servidor esta funcionando en el port ${port}`);
 });

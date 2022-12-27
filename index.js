@@ -24,3 +24,5 @@ app.use("/api/tareas", require("./routes/tareas"));
 app.listen(PORT,'0.0.0.0', () => {
   console.log(`El servidor esta funcionando en el port ${PORT}`);
 });
+
+console.log("Todo bien")
